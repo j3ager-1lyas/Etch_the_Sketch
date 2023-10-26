@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="apps/frontend/style.css">
+    <script src="apps/frontend/script.js" defer></script>
+</head>
+<body>
+    
+    <div id="header">
+        <h2 id="title"> Etch a Sketch!</h2>
+    </div>
+    <div id="mainContent">
+        <div id="toolArea">
+            <div class="toolBar" id="mainTool">
+                <div id="slidecontainer">
+                    <label for="gridSize">16 x 16</label>
+                    <input type="range" min="16" max="50" value="16" name="slider" id="gridSize">
+                </div>
+                <div id="colorContainer">
+                    <input type="color" name="" id="#colorPalette">
+                </div>
+                <div id="rainbowContainer">
+                    <button id="rainbowColor"> Rainbow </button>
+                </div>
+                <div id="darkenContainer">
+                    <button id="darkening"> Darkening </button>
+                </div>
+                <div id="lightenContainer">
+                    <button id="lightening"> Lightening </button>
+                </div>
+            </div>
+        </div>
+        <div id="boardArea">
+            <div id="secondTool">
+                <button id="eraser">Eraser</button>
+                <button id="clear">Clear Table</button>
+                <button id="picture"> Capture </button>
+            </div>
+            <div id="drawingGrid"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footerText">
+            CopyRight @ Ilyas
+        </div>
+    </div>
+
+</body>
+</html>

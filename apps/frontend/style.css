@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body,html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color:#393646 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+/* <--Styling the Header of the Page */
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4F4557;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 15%;
+}
+
+#mainContent{
+    display: flex;
+    height:700px;
+    padding: 10px 100px 10px 100px;
+}
+
+#footer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D5D6E;
+    height:5%;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+}
+
+/* <--Styling Content of each layout-->*/
+/* <--Header's Content--> */
+@font-face {
+    font-family: agbalumo;
+    src: url(./fontsfamily/Agbalumo-Regular.ttf);
+}
+@font-face {
+    font-family: PT_Serifbold;
+    src: url(fontsfamily/PTSerif-BoldItalic.ttf);
+}
+#title{
+    font-family: PT_Serifbold ;
+    font-size: 3em;
+    color: #F4EEE0;
+    text-shadow: 1px 1px 5px #ede6d6;
+}
+
+/*<--Main Content-->*/
+#toolArea{
+    width:40%;
+    display: flex;
+    justify-content: center;
+}
+
+#mainTool{
+    display:flex;
+    flex-direction: column;
+    margin: 65px 0px 40px 50px;
+    height:600px;
+    width : 200px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F4EEE0;
+    border-radius: 15px;
+}
+
+#mainTool > div {
+    height:20%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#boardArea{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px 10px 30px 100px;
+    width:100%;
+}
+#secondTool{
+    display: flex;
+    height: 40px;
+    width:600px;
+    padding:10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F4EEE0;
+    border-radius: 15px;
+}
+
+#drawingGrid{
+    width: 600px;
+    height:600px;
+    border:3px solid black;
+    background-color: aliceblue;
+}
+
+#toolBar{
+    
+}
