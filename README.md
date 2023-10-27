@@ -21,14 +21,11 @@ The Tools bar will have :
 divded to two Tool Bars :
     1. Eraser .
      . Table Clear.
-     . Picture my Art.
     2. Grid Size Control.
      . Color Palette.
      . Rainbow.
      . Darkening.
      . Lightening.
-*As an Addon let create a button that can make 
- a picture of the Art in its current form,if possible.
 *The UI shall be simple and with Coloring that is
   neutral and from same Palette of cold light Colors.
 *Only The Tools bar shall shrink a bit to an extent
