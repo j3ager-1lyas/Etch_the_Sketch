@@ -5,6 +5,7 @@
 body,html {
     width: 100%;
     height: 100%;
+    min-width: 1300px;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    align-items: stretch;
+    align-items:stretch ;
 }
 
 /* <--Styling the Header of the Page */
@@ -55,6 +56,7 @@ body {
     src: url(fontsfamily/PTSerif-BoldItalic.ttf);
 }
 #title{
+
     font-family: PT_Serifbold ;
     font-size: 3em;
     color: #F4EEE0;
@@ -90,7 +92,7 @@ body {
 #boardArea{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     padding: 30px 10px 30px 100px;
     width:100%;
 }
@@ -112,3 +114,132 @@ body {
     background-color: aliceblue;
 }
 
+/*<--Styling The Buttons of The ToolArea-->*/
+button {
+
+    width:100px;
+    height:50px;
+    font-size: medium;
+    font-family: agbalumo;
+    color: #262525;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px ;
+
+}
+
+#rainbowColor{
+    color: black;
+    background: linear-gradient(40deg, rgb(244, 122, 122), rgb(255, 167, 3), yellow, rgb(119, 244, 119), rgb(115, 115, 251), rgb(198, 123, 251), rgb(248, 105, 248), rgb(250, 111, 111));
+}
+
+#darkening{
+    background-color: #dedede;
+}
+#lightening{
+    background-color: #fbfbfb;
+}
+
+/*<Slide Bar Style>*/
+.range{
+    height:60px;
+    width: 190px;
+    background: #eff9cafa;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+}
+
+.range #sliderValue{
+    position:relative;
+    width:125px;
+}
+
+.range #sliderValue span {
+    position:absolute;
+    height:45px;
+    width:45px;
+    color:#fff;
+    font-weight: 500;
+    top:-33px;
+    line-height: 45px;
+    z-index: 2;
+}
+.range #sliderValue span:after {
+    position:absolute;
+    content: "";
+    height:35px;
+    width:35px;
+    background: rgb(96, 85, 144);
+    transform: translateX(-50%) rotate(45deg);
+    border: 3px solid #fff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    left: 50%;
+    z-index: -1;
+}
+.range .field {
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:50%;
+}
+.range .field .value{
+    position:absolute;
+    font-size: 18px;
+    font-weight: 600;
+    color:rgb(96, 85, 144);
+}
+.range .field .value.left{
+    left: 7px;
+}
+.range .field .value.right{
+    right:2px;
+}
+.range .field input{
+    height: 3px;
+    -webkit-appearance: none;
+    
+    width:120px;
+    background: #ddd;
+    border-radius: 5px ;
+    outline: none;
+    border: none;
+}
+
+.range .field input::-webkit-slider-thumb{
+
+    -webkit-appearance: none;
+    height: 15px;
+    width:15px;
+    background:rgb(96, 85, 144);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #664aff;
+}
+
+/*<Color Picker Style>*/
+#colorPalette{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    width:100px;
+    height: 100px;
+    border:none;
+    cursor:pointer;
+
+}
+#colorPalette::-webkit-color-swatch{
+
+    border-radius: 15px;
+    border:none;
+}
+#colorPalette::-moz-color-swatch{
+    border-radius: 15px;
+    border:none;
+}

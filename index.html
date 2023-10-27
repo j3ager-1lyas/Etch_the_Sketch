@@ -16,11 +16,20 @@
         <div id="toolArea">
             <div class="toolBar" id="mainTool">
                 <div id="slidecontainer">
-                    <label for="gridSize">16 x 16</label>
-                    <input type="range" min="16" max="50" value="16" name="slider" id="gridSize">
+                    <div class="range">
+                        <div id="sliderValue">
+                            <span>16</span>
+                        </div>
+                        <div class="field">
+                            <div class="value left">16</div>
+                            <input type="range" min="16" max="100" step="1" value="16" name="slider" id="gridSize">
+                            <div class="value right">100</div>
+                        </div>
+                        
+                    </div>
                 </div>
                 <div id="colorContainer">
-                    <input type="color" name="" id="#colorPalette">
+                    <input type="color" name="" id="colorPalette">
                 </div>
                 <div id="rainbowContainer">
                     <button id="rainbowColor"> Rainbow </button>
