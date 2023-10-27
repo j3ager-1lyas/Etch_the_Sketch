@@ -116,7 +116,6 @@ body {
 
 /*<--Styling The Buttons of The ToolArea-->*/
 button {
-
     width:100px;
     height:50px;
     font-size: medium;
@@ -124,7 +123,11 @@ button {
     color: #262525;
     border-radius: 15px;
     box-shadow: 2px 2px 2px ;
-
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.96);
 }
 
 #rainbowColor{
