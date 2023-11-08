@@ -1,3 +1,6 @@
+
+/* General Style*/
+
 *{
     margin: 0;
     padding:0;
@@ -63,6 +66,10 @@ body {
     text-shadow: 1px 1px 5px #ede6d6;
 }
 
+
+
+
+
 /*<--Main Content-->*/
 #toolArea{
     width:40%;
@@ -89,6 +96,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 #boardArea{
     display: flex;
     flex-direction: column;
@@ -96,6 +104,7 @@ body {
     padding: 30px 10px 30px 100px;
     width:100%;
 }
+
 #secondTool{
     display: flex;
     height: 40px;
@@ -116,6 +125,9 @@ body {
     flex-wrap: wrap;
 }
 
+
+
+
 /*<--Styling The Buttons of The ToolArea-->*/
 button {
     width:100px;
@@ -128,6 +140,7 @@ button {
     transition: all 0.2s ease;
     cursor: pointer;
 }
+
 button:active{
     transform: scale(0.96);
 }
@@ -140,9 +153,14 @@ button:active{
 #darkening{
     background-color: #dedede;
 }
+
 #lightening{
     background-color: #fbfbfb;
 }
+
+
+
+
 
 /*<Slide Bar Style>*/
 .range{
@@ -172,6 +190,7 @@ button:active{
     line-height: 45px;
     z-index: 2;
 }
+
 .range #sliderValue span:after {
     position:absolute;
     content: "";
@@ -186,6 +205,7 @@ button:active{
     left: 50%;
     z-index: -1;
 }
+
 .range .field {
     position: relative;
     display:flex;
@@ -193,18 +213,22 @@ button:active{
     justify-content: center;
     height:50%;
 }
+
 .range .field .value{
     position:absolute;
     font-size: 18px;
     font-weight: 600;
     color:rgb(96, 85, 144);
 }
+
 .range .field .value.left{
     left: 7px;
 }
+
 .range .field .value.right{
     right:2px;
 }
+
 .range .field input{
     height: 3px;
     -webkit-appearance: none;
