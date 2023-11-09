@@ -1,75 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Etch a Sketch</title>
 
-    <link rel="stylesheet" href="apps/frontend/style.css">
+    <link rel="stylesheet" href="apps/frontend/style.css" />
     <script src="apps/frontend/script.js" defer></script>
-
-</head>
-    <!-- Visible Content -->
-<body>
-        <!-- Header -->
+  </head>
+  <!-- Visible Content -->
+  <body>
+    <!-- Header -->
     <div id="header">
-        <h2 id="title"> Etch a Sketch!</h2>
+      <h2 id="title">Etch a Sketch!</h2>
     </div>
-        <!-- Main Content -->
+    <!-- Main Content -->
     <div id="mainContent">
-                <!-- Left Tools Set & Controls-->
-        <div id="toolArea">
-            <div class="toolBar" id="mainTool">
-                    <!-- Board-Size Control -->
-                <div id="slidecontainer">
-                    <div class="range">
-                        <div id="sliderValue">
-                            <span id="gridNumber">16</span>
-                        </div>
-                        <div class="field">
-                            <div class="value left">16</div>
-                            <input type="range" min="16" max="100" step="1" value="16" name="slider" id="gridSize">
-                            <div class="value right">100</div>
-                        </div>
-                        
-                    </div>
-                </div>
-                    <!-- Colors Palette -->
-                <div id="colorContainer">
-                    <input type="color" name="" id="colorPalette">
-                </div>
-                    <!-- Rainbow a Special Color Control -->
-                <div id="rainbowContainer">
-                    <button id="rainbowColor"> Rainbow </button>
-                </div>
-                    <!-- Darkening a Special Effect Control -->
-                <div id="darkenContainer">
-                    <button id="darkening"> Darkening </button>
-                </div>
-                    <!-- Lightening a Special Effect Control -->
-                <div id="lightenContainer">
-                    <button id="lightening"> Lightening </button>
-                </div>
+      <!-- Left Tools Set & Controls-->
+      <div id="toolArea">
+        <div class="toolBar" id="mainTool">
+          <!-- Board-Size Control -->
+          <div id="slidecontainer">
+            <div class="range">
+              <div id="sliderValue">
+                <span id="gridNumber">16</span>
+              </div>
+              <div class="field">
+                <div class="value left">16</div>
+                <input
+                  type="range"
+                  min="16"
+                  max="100"
+                  step="1"
+                  value="16"
+                  name="slider"
+                  id="gridSize"
+                />
+                <div class="value right">100</div>
+              </div>
             </div>
+          </div>
+          <!-- Colors Palette -->
+          <div id="colorContainer">
+            <input type="color" name="" id="colorPalette" />
+          </div>
+          <!-- Rainbow a Special Color Control -->
+          <div id="rainbowContainer">
+            <button id="rainbowColor">Rainbow</button>
+          </div>
+          <!-- Darkening a Special Effect Control -->
+          <div id="darkenContainer">
+            <button id="darkening">Darkening</button>
+          </div>
+          <!-- Lightening a Special Effect Control -->
+          <div id="lightenContainer">
+            <button id="lightening">Lightening</button>
+          </div>
         </div>
-                <!-- Drawing Board & Right Tools Set -->
-        <div id="boardArea">
-            <div id="secondTool">
-                <button id="eraser">Eraser</button>
-                <button id="tableClear">Clear Table</button>
-            </div>
-            
-            <div id="drawingBoard"></div>
-            
+      </div>
+      <!-- Drawing Board & Right Tools Set -->
+      <div id="boardArea">
+        <div id="secondTool">
+          <button id="eraser">Eraser</button>
+          <button id="tableClear">Clear Table</button>
         </div>
+        <!--Board-->
+        <div id="drawingBoard"></div>
+      </div>
     </div>
-        <!-- Footer -->
+    <!-- Footer -->
     <div id="footer">
-        <div id="footerText">
-            CopyRight @ Ilyas
-        </div>
+      <div id="footerText">CopyRight @ Ilyas</div>
     </div>
-
-</body>
+  </body>
 </html>
