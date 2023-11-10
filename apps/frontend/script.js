@@ -38,7 +38,7 @@ let drawingBoard = document.querySelector('#drawingBoard');
 /* Global-Variables */
 let gridSize = 16;
 let pixelColor = 'black';
-let pixelRainbow = pixelDarken = pixelLighten = false;
+let pixelRainbow = pixelDarken = pixelLighten =mouseDown= false;
 
 
 
@@ -62,8 +62,16 @@ function buildGrid() {
         drawingBoard.appendChild(gridPixel);
     }
     let gridPixel = document.querySelectorAll('.pixel');
+    drawingBoard.addEventListener('mousedown',()=>{
+        mouseDown = true;
+    })
+    drawingBoard.addEventListener('mouseup',()=>{
+        mouseDown = false;
+    })
     gridPixel.forEach((pixel) => {
-        pixel.addEventListener('mouseover', colorThePixel);
+        
+            pixel.addEventListener('mouseover',colorThePixel)
+         
     })
     clear.textContent = 'Table Building !!'
     setTimeout(() => { clear.textContent = 'Clear Table' }, 2000)
@@ -78,17 +86,18 @@ function getGridSize() {
 
 /* Coloring The Grids Pixels */
 function colorThePixel() {
-    if (pixelRainbow) {
-        this.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16)
-    } else if (pixelDarken) {
-        this.style.backgroundColor = pSBC(-0.2, this.style.backgroundColor);
-
-    } else if (pixelLighten) {
-        this.style.backgroundColor = pSBC(0.2, this.style.backgroundColor);
-    } else {
-        this.style.backgroundColor = pixelColor;
+    if(mouseDown){
+        if (pixelRainbow) {
+            this.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16)
+        } else if (pixelDarken) {
+            this.style.backgroundColor = pSBC(-0.2, this.style.backgroundColor);
+    
+        } else if (pixelLighten) {
+            this.style.backgroundColor = pSBC(0.2, this.style.backgroundColor);
+        } else {
+            this.style.backgroundColor = pixelColor;
+        }
     }
-
 }
 
 /* Selecting The Effect on a Grid Pixel */
